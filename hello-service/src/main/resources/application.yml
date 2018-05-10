@@ -5,3 +5,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 60000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
