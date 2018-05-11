@@ -1,0 +1,7 @@
+
+logging:
+  file: ../logs/FeignConsumer.log
+  level:
+    feign: DEBUG
+    com:
+      example: DEBUG

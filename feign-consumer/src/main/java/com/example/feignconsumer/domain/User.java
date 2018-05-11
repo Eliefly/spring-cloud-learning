@@ -7,6 +7,7 @@ package com.example.feignconsumer.domain;
  * @date 2018-03-29
  */
 public class User {
+
     String name;
     Integer age;
 

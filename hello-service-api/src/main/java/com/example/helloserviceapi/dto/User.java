@@ -1,6 +1,7 @@
 package com.example.helloserviceapi.dto;
 
 public class User {
+
     String name;
     Integer age;
 
@@ -8,6 +9,8 @@ public class User {
     }
 
     public User(String name, Integer age) {
+        this.name = name;
+        this.age = age;
     }
 
     public String getName() {

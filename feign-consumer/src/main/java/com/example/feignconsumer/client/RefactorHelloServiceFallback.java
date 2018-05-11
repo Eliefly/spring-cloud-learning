@@ -1,6 +1,5 @@
 package com.example.feignconsumer.client;
 
-import com.example.feignconsumer.client.RefactorHelloServiceClient;
 import com.example.helloserviceapi.dto.User;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,17 +16,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RefactorHelloServiceFallback implements RefactorHelloServiceClient {
 
     @Override
-    public String hello(String names) {
+    public String hello4(String names) {
         return "hello4 error";
     }
 
     @Override
-    public User hello(String name, Integer age) {
+    public User hello5(String name, Integer age) {
         return new User("unknow", 0);
     }
 
     @Override
-    public String hello(User user) {
+    public String hello6(User user) {
         return "hello6 error";
     }
 }

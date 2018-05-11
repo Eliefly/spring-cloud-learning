@@ -18,17 +18,17 @@ public class RefactorHelloController implements HelloServiceApi {
     }
 
     @Override
-    public String hello(@RequestParam("name") String name) {
+    public String hello4(@RequestParam("name") String name) {
         return "Hello " + name;
     }
 
     @Override
-    public User hello(@RequestHeader("name") String name, @RequestHeader("age") Integer age) {
+    public User hello5(@RequestHeader("name") String name, @RequestHeader("age") Integer age) {
         return new User(name, age);
     }
 
     @Override
-    public String hello(@RequestBody User user) {
+    public String hello6(@RequestBody User user) {
         return "Hello " + user.getName() + ", " + user.getAge();
     }
 }

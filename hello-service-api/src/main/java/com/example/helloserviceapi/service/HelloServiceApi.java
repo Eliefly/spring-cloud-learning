@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface HelloServiceApi {
 
     @RequestMapping(value = {"/hello4"}, method = {RequestMethod.GET})
-    String hello(@RequestParam("name") String var1);
+    String hello4(@RequestParam("name") String var1);
 
-    @RequestMapping(value = {"/hello5"}, method = {RequestMethod.GET})
-    User hello(@RequestHeader("name") String var1, @RequestHeader("age") Integer var2);
+    @RequestMapping(value = {"/hello5"}, method = {RequestMethod.POST})
+    User hello5(@RequestHeader("name") String var1, @RequestHeader("age") Integer var2);
 
     @RequestMapping(value = {"/hello6"}, method = {RequestMethod.POST})
-    String hello(@RequestBody User var1);
+    String hello6(@RequestBody User user);
 }
