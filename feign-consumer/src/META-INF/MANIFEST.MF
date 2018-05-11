@@ -51,5 +51,5 @@ Class-Path: spring-cloud-starter-netflix-eureka-server-1.4.4.RELEASE.j
  bbon-2.2.5.jar spring-aop-4.3.14.RELEASE.jar jersey-core-1.19.1.jar n
  etty-transport-native-epoll-4.0.27.Final.jar ribbon-core-2.2.5.jar ja
  ckson-core-2.8.10.jar
-Main-Class: com.example.feignconsumer.FeignConsumerApplication
+Main-Class: com.example.feignconsumer.FeignConsumer
 

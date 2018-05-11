@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = HelloApplication.class) // 指定程序入口类
+@SpringBootTest(classes = HelloService.class) // 指定程序入口类
 @WebAppConfiguration
 public class HelloApplicationTest {
 

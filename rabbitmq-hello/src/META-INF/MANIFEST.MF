@@ -18,5 +18,5 @@ Class-Path: logback-core-1.1.11.jar commons-codec-1.10.jar jackson-ann
  .jar spring-beans-4.3.14.RELEASE.jar spring-messaging-4.3.14.RELEASE.
  jar jcl-over-slf4j-1.7.25.jar spring-boot-starter-tomcat-1.5.10.RELEA
  SE.jar snakeyaml-1.17.jar http-client-1.1.1.RELEASE.jar
-Main-Class: com.example.rabbitmqhello.RabbitmqHelloApplication
+Main-Class: com.example.rabbitmqhello.RabbitmqDemo
 

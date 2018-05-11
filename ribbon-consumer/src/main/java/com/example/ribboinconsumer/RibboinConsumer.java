@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
-public class RibboinConsumerApplication {
+public class RibboinConsumer {
 
     @Bean
     @LoadBalanced
@@ -20,6 +20,6 @@ public class RibboinConsumerApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(RibboinConsumerApplication.class, args);
+        SpringApplication.run(RibboinConsumer.class, args);
     }
 }

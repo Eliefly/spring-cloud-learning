@@ -48,5 +48,5 @@ Class-Path: eureka-client-1.7.0.jar spring-webmvc-4.3.14.RELEASE.jar r
  pp3_min-1.1.4c.jar servo-core-0.10.1.jar jersey-core-1.19.1.jar sprin
  g-cloud-starter-eureka-server-1.4.3.RELEASE.jar rxnetty-servo-0.4.9.j
  ar netty-common-4.0.27.Final.jar
-Main-Class: com.example.hello.HelloApplication
+Main-Class: com.example.hello.HelloService
 
