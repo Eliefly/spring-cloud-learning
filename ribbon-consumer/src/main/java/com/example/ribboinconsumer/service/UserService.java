@@ -1,6 +1,6 @@
 package com.example.ribboinconsumer.service;
 
-import com.example.ribboinconsumer.domain.User;
+import com.example.common.domain.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheKey;
 import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove;

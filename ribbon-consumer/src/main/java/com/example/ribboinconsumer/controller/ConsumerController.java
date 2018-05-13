@@ -17,16 +17,16 @@ public class ConsumerController {
     private RestTemplate restTemplate;
 
     /*
-    初始的消费方式
-     */
-//    @RequestMapping(value = {"/ribbon-consumer"}, method = {RequestMethod.GET})
-//    public String helloConsumer() {
-//        return restTemplate.getForEntity("http://HELLO-SERVICE/hello",
-//                String.class).getBody();
-//    }
+    //初始的消费方式
+    @RequestMapping(value = {"/ribbon-consumer"}, method = {RequestMethod.GET})
+    public String helloConsumer() {
+        return restTemplate.getForEntity("http://HELLO-SERVICE/hello",
+                String.class).getBody();
+    }
+    */
 
-    /*
-    增加 HelloService，改变消费方式。
+    /**
+     * 增加 HelloService，改变消费方式
      */
     @Autowired
     HelloService helloService;

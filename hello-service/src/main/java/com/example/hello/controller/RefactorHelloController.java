@@ -1,6 +1,6 @@
 package com.example.hello.controller;
 
-import com.example.helloserviceapi.dto.User;
+import com.example.common.domain.User;
 import com.example.helloserviceapi.service.HelloServiceApi;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;

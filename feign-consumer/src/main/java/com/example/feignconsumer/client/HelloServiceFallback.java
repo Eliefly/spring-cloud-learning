@@ -1,7 +1,6 @@
 package com.example.feignconsumer.client;
 
-import com.example.feignconsumer.domain.User;
-import com.example.feignconsumer.client.HelloServiceClient;
+import com.example.common.domain.User;
 import org.springframework.stereotype.Component;
 
 /**

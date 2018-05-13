@@ -7,15 +7,20 @@ package com.example.ribboinconsumer.command;
  * @date 2018-03-29
  */
 
-import com.example.ribboinconsumer.domain.User;
+import com.example.common.domain.User;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandKey;
 import com.netflix.hystrix.HystrixCommandKey.Factory;
 import com.netflix.hystrix.HystrixRequestCache;
 import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.client.RestTemplate;
 
 public class UserGetCommand extends HystrixCommand<User> {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserGetCommand.class);
+
     private static final HystrixCommandKey GETTER_KEY = Factory.asKey("CommandKey");
     private RestTemplate restTemplate;
     private Long id;

@@ -1,13 +1,18 @@
 package com.example.ribboinconsumer.command;
 
-import com.example.ribboinconsumer.domain.User;
+import com.example.common.domain.User;
 import com.netflix.hystrix.HystrixObservableCommand;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.client.RestTemplate;
 import rx.Observable;
 import rx.Observable.OnSubscribe;
 import rx.Subscriber;
 
 public class UserObservableCommand extends HystrixObservableCommand<User> {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserObservableCommand.class);
+
     private RestTemplate restTemplate;
     private Long id;
 

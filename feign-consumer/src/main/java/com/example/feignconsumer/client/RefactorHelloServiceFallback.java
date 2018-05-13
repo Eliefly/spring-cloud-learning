@@ -1,6 +1,6 @@
 package com.example.feignconsumer.client;
 
-import com.example.helloserviceapi.dto.User;
+import com.example.common.domain.User;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 
