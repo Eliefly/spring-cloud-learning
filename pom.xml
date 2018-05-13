@@ -17,6 +17,7 @@
         <module>ribbon-consumer</module>
         <module>hello-service-api</module>
         <module>common</module>
+        <module>api-gateway</module>
     </modules>
 
 </project>
