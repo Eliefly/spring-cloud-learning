@@ -5,22 +5,41 @@ server:
   port: 5555
 
 # 1.传统的路由方式(不依赖服务发现机制，具体指定每个路由表达式与服务实例的映射关系。)
-zuul.routes.api-a-url.path: /api-a-url/**
-zuul.routes.api-a-url.url: http://localhost:8080/
-
-# 2.面向服务的路由
-# http://localhost:5555/api-a/hello
-zuul.routes.api-a.path: /api-a/**
-zuul.routes.api-a.serviceId: hello-service
-
-# http://localhost:5555/api-b/feign/consumer3
-zuul.routes.api-b.path: /api-b/**
-zuul.routes.api-b.serviceId: feign-consumer
+#zuul.routes.api-a-url.path: /api-a-url/**
+#zuul.routes.api-a-url.url: http://localhost:8080/
+#
+## 2.面向服务的路由
+## http://localhost:5555/api-a/hello
+#zuul.routes.api-a.path: /api-a/**
+#zuul.routes.api-a.serviceId: hello-service
+#
+## http://localhost:5555/api-b/feign/consumer3
+#zuul.routes.api-b.path: /api-b/**
+#zuul.routes.api-b.serviceId: feign-consumer
 
 # zuul 对所有的服务都不自动创建路由规则，否则zuul会默认使用serviceId作为path前缀
-zuul.ignored-services: '*'
+#zuul.ignored-services: '*'
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:1111/eureka/
+
+zuul:
+# zuul 对所有的服务都不自动创建路由规则，否则zuul会默认使用serviceId作为path前缀
+  ignored-services: '*'
+  routes:
+    # 1.传统的路由方式(不依赖服务发现机制，具体指定每个路由表达式与服务实例的映射关系。)
+    api-a-url:
+      path: /api-a-url/**
+      url: http://localhost:8080/
+    # 2.面向服务的路由
+    api-a:
+      path: /api-a/**
+      serviceId: hello-service
+    api-b:
+      path: /api-b/**
+      serviceId: feign-consumer
+    api-c:
+      path: /api-c/**
+      url: forward:/local
