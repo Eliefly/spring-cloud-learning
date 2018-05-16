@@ -43,3 +43,18 @@ zuul:
     api-c:
       path: /api-c/**
       url: forward:/local
+
+# HystrixCommand 执行超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 70000
+
+ribbon:
+  # 创建请求连接的超时时间
+  ConnectTimeout: 60000
+  # 转发请求的超时时间
+  ReadTimeout: 600000
