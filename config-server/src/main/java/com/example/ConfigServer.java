@@ -3,7 +3,6 @@ package com.example;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
-import org.springframework.context.annotation.ComponentScan;
 
 /**
  * ConfigApplication
@@ -13,11 +12,11 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @EnableConfigServer
 @SpringCloudApplication
-@ComponentScan(basePackages = "com.example")
-public class ConfigApplication {
+//@ComponentScan(basePackages = "com.example")
+public class ConfigServer {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(ConfigApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(ConfigServer.class).web(true).run(args);
     }
 
 }

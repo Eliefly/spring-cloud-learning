@@ -7,10 +7,10 @@ spring:
         git:
           uri: https://github.com/Eliefly/spring-cloud-learning
           search-paths: config-repo
-          username: eliefly
-          password: 1qscgy7UKlp
+          username: username
+          password: password
 server:
-  port: 7007
+  port: 7001
 
 
 ## HystrixCommand 执行超时时间
