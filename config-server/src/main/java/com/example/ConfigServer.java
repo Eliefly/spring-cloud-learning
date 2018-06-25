@@ -14,10 +14,10 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableConfigServer
 @SpringCloudApplication
 @ComponentScan(basePackages = "com.example")
-public class ConfigApplication {
+public class ConfigServer {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(ConfigApplication.class).web(true).run(args);
+        new SpringApplicationBuilder(ConfigServer.class).web(true).run(args);
     }
 
 }

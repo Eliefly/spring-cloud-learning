@@ -10,7 +10,7 @@ spring:
           username: eliefly
           password: 1qscgy7UKlp
 server:
-  port: 7007
+  port: 7001
 
 
 ## HystrixCommand 执行超时时间

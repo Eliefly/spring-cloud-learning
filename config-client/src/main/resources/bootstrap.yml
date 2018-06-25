@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demospace
+  cloud:
+    config:
+      profile: prod
+      label: master
+      uri: http://localhost:7001/
+server:
+  port: 7002

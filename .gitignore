@@ -99,3 +99,4 @@ buildNumber.properties
 *.log
 *.iml
 /.idea/vcs.xml
+META-INF/
