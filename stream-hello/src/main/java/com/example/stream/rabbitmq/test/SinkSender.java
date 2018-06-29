@@ -1,4 +1,4 @@
-package com.example.stream.rabbitmq;
+package com.example.stream.rabbitmq.test;
 
 import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.cloud.stream.messaging.Sink;

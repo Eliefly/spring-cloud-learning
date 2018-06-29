@@ -1,7 +1,6 @@
 package com.example.stream.rabbitmq.test;
 
 import com.example.stream.StreamBoot;
-import com.example.stream.rabbitmq.SinkSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
