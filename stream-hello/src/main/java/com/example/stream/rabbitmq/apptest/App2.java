@@ -26,7 +26,7 @@ public class App2 {
     private final static Logger LOGGER = LoggerFactory.getLogger(App2.class);
 
     // 监听处理“input”通道的消息
-    @StreamListener(Processor.OUTPUT)
+    @StreamListener(Processor.INPUT)
     public void receiveFromOutput(Object payload) {
         LOGGER.info("Received: {}", payload);
     }
@@ -36,7 +36,7 @@ public class App2 {
      * <p>@Poller 将放发设置为轮询执行，定义为2000毫秒。</p>
      */
     @Bean
-    @InboundChannelAdapter(value = Processor.INPUT, poller = @Poller(fixedDelay = "2000"))
+    @InboundChannelAdapter(value = Processor.OUTPUT, poller = @Poller(fixedDelay = "2000"))
     public MessageSource<Date> timerMessageSource() {
         // java8 lambda
         return () -> new GenericMessage<>(new Date());
